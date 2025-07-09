@@ -1,0 +1,53 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffe6f0;
+  color: #d63384;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.choices {
+  margin: 20px;
+}
+
+button {
+  background: #ff99cc;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3;
+}
+
+button:hover {
+  background: #ff66b2;
+}
+
+.result {
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+.score {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.heart {
+  font-size: 2em;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
