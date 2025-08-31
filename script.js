@@ -4,7 +4,7 @@ let computerScore = 0;
 function play(userChoice) {
   const choices = ['✊', '✋', '✌️'];
   const computerChoice = choices[Math.floor(Math.random() * 3)];
-  let resultText = `เราเลือก ${userChoice} | สมาร์ททททเลือก ${computerChoice}<br>`;
+  let resultText = `เราเลือก ${userChoice} | คุณเลือก ${computerChoice}<br>`;
 
   if (userChoice === computerChoice) {
     resultText += "เสมอเลย 💞";
@@ -17,9 +17,10 @@ function play(userChoice) {
     resultText += "เราชนะ เย้! 💖";
   } else {
     computerScore++;
-    resultText += "สมาร์ททททชนะ แงง 😚";
+    resultText += "คุณชนะ แงง 😚";
   }
 
   document.getElementById("result").innerHTML = resultText;
-  document.getElementById("score").innerText = `แฟน: ${computerScore} | เรา: ${userScore}`;
+  document.getElementById("score").innerText = `คุณ: ${computerScore} | เรา: ${userScore}`;
 }
+
